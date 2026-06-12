@@ -33,7 +33,7 @@
      </div>
       <div class="language-container">
         <img class="icon-flag" src="icons/flag_in.svg">
-       <span>EN</span>
+       <span>IN</span>
      </div>
      <div class="account-container">
        <div>Hello, sign in</div>
@@ -58,8 +58,63 @@
      <a href="#" class="sub-link">Sell</a>
    </div>
  </header>
- <main>
+  <main>
+    <div class="hero-container">
+   <div class="slides">
+ <img class="slide" src="images/619geyiQI5L._SX3000_.jpg">
+   <img class="slide" src="images/61Yx5-N155L._SX3000_.jpg" style="display:none;">
+    <img class="slide" src="images/71QcgptqadL._SX3000_.jpg" style="display:none;">
+      <img class="slide" src="images/71qcoYgEhzL._SX3000_.jpg" style="display:none;">
+   </div>
+   <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  <div class="product-grid">
+    <div class="card">
+   <h3>Get your game on</h3>
+   <div class="card-img-container">
+     <img src="images/619geyiQI5L._SX3000_.jpg">
+   </div>
+    <a href="#">Shop gaming</a>
+     </div>
+    <div class="card">
+  <h3>Shop Fashion for less</h3>
+    <div class="card-img-container">
+      <img src="images/71QcgptqadL._SX3000_.jpg">
+   </div>
+   <a href="#">See all deals</a>
+     </div>
+   <div class="card">
+     <h3>New home arrivals</h3>
+     <div class="card-img-container">
+       <img src="images/71qcoYgEhzL._SX3000_.jpg">
+     </div>
+     <a href="#">Shop now</a>
+   </div>
+    <div class="card">
+      <h3>Deals on Beauty</h3>
+      <div class="card-img-container">
+        <img src="images/61Yx5-N155L._SX3000_.jpg">
+      </div>
+      <a href="#">Explore more</a>
+    </div>
+  </div>
+  </main>
 
- </main>
+<script>
+var cur=0
+ function changeSlide(n){
+   var slides = document.getElementsByClassName("slide")
+  slides[cur].style.display = "none"
+   cur=cur+n
+  if(cur>=slides.length){
+    cur=0
+  }
+   if(cur<0){
+     cur=slides.length-1
+   }
+   slides[cur].style.display = "block"
+ }
+</script>
 </body>
 </html>

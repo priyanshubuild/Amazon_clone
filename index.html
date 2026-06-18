@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
   <title>Amazon</title>
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
  <header>
    <div class="navbar-top">
      <div class="logo-container">
    <a href="#">
-      <img class="amazon-logo" src="amazon_logo.svg">
+      <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo">
     </a>
        </div>
     <div class="location-container">
-       <img class="icon-location" src="icons/location.svg">
+       <img class="icon-location" src="icons/location.svg" alt="">
      <div class="location-text">
        <div class="label-top">Deliver to</div>
       <div class="label-bottom">India</div>
@@ -28,29 +28,29 @@
        </select>
        <input type="text" class="search-input" placeholder="Search Amazon">
        <button class="search-button">
-         <img class="icon-search" src="icons/search.svg">
+         <img class="icon-search" src="icons/search.svg" alt="search">
        </button>
      </div>
       <div class="language-container">
-        <img class="icon-flag" src="icons/flag_in.svg">
-       <span>IN</span>
+        <img class="icon-flag" src="icons/flag_in.svg" alt="india flag">
+       <span style="color: white; font-size: 12px;">IN</span>
      </div>
-     <div class="account-container">
+     <div class="account-container" style="color: white;">
        <div>Hello, sign in</div>
-       <div style="font-weight: bold;">Account & Lists</div>
+       <div style="font-weight: bold; font-size: 13px;">Account &amp; Lists</div>
      </div>
-      <div class="orders-container">
+      <div class="orders-container" style="color: white;">
        <div>Returns</div>
-       <div style="font-weight: bold;">& Orders</div>
+       <div style="font-weight: bold;">&amp; Orders</div>
      </div>
      <div class="cart-container">
-       <img class="icon-cart" src="icons/cart.svg">
-       <span class="cart-count">0</span>
-        <span>Cart</span>
+       <img class="icon-cart" src="icons/cart.svg" alt="cart">
+       <span class="cart-count" style="font-size:14px; top:-3px;">0</span>
+        <span style="color: white; font-size: 13px; font-weight: bold;">Cart</span>
      </div>
    </div>
    <div class="navbar-sub">
-     <span class="sub-menu">☰ All</span>
+     <span class="sub-menu">&#9776; All</span>
      <a href="#" class="sub-link">Today's Deals</a>
      <a href="#" class="sub-link">Customer Service</a>
      <a href="#" class="sub-link">Registry</a>
@@ -58,22 +58,23 @@
      <a href="#" class="sub-link">Sell</a>
    </div>
  </header>
+ <br>
   <main>
     <div class="hero-container">
    <div class="slides">
- <img class="slide" src="images/619geyiQI5L._SX3000_.jpg">
-   <img class="slide" src="images/61Yx5-N155L._SX3000_.jpg" style="display:none;">
-    <img class="slide" src="images/71QcgptqadL._SX3000_.jpg" style="display:none;">
-      <img class="slide" src="images/71qcoYgEhzL._SX3000_.jpg" style="display:none;">
+ <img class="slide" src="images/619geyiQI5L._SX3000_.jpg" alt="banner1">
+   <img class="slide" src="images/61Yx5-N155L._SX3000_.jpg" alt="banner2" style="display:none;">
+    <img class="slide" src="images/71QcgptqadL._SX3000_.jpg" alt="banner3" style="display:none;">
+      <img class="slide" src="images/71qcoYgEhzL._SX3000_.jpg" alt="banner4" style="display:none;">
    </div>
    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
   <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
     </div>
   <div class="product-grid">
-    <div class="card">
-   <h3>Get your game on</h3>
+    <div class="card" style="min-height: 420px;">
+   <h3 style="font-size:16px;">Get your game on</h3>
    <div class="card-img-container">
-     <img src="images/Fuji_Gaming_SingleImageCard_C-1._SY304_CB762596570_.jpg">
+     <img src="images/Fuji_Gaming_SingleImageCard_C-1._SY304_CB762596570_.jpg" alt="gaming">
    </div>
     <a href="#">Shop gaming</a>
      </div>
@@ -81,19 +82,19 @@
   <h3>Shop Fashion for less</h3>
     <div class="quad-grid">
       <div class="quad-item">
-        <img src="images/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg">
+        <img src="images/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt="tops">
         <span>Tops</span>
       </div>
       <div class="quad-item">
-        <img src="images/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg">
+        <img src="images/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt="dresses">
         <span>Dresses</span>
       </div>
       <div class="quad-item">
-        <img src="images/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg">
+        <img src="images/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt="bottoms">
         <span>Bottoms</span>
       </div>
       <div class="quad-item">
-        <img src="images/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg">
+        <img src="images/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt="shoes">
         <span>Shoes</span>
       </div>
     </div>
@@ -103,19 +104,19 @@
      <h3>New home arrivals</h3>
      <div class="quad-grid">
        <div class="quad-item">
-         <img src="images/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg">
+         <img src="images/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg" alt="">
          <span>Kitchen</span>
        </div>
        <div class="quad-item">
-         <img src="images/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg">
+         <img src="images/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg" alt="">
          <span>Improvement</span>
        </div>
        <div class="quad-item">
-         <img src="images/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg">
+         <img src="images/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg" alt="">
          <span>Decor</span>
        </div>
        <div class="quad-item">
-         <img src="images/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg">
+         <img src="images/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg" alt="">
          <span>Bedding</span>
        </div>
      </div>
@@ -125,63 +126,63 @@
       <h3>Refresh your space</h3>
       <div class="quad-grid">
         <div class="quad-item">
-          <img src="images/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg">
+          <img src="images/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg" alt="">
           <span>Furniture</span>
         </div>
         <div class="quad-item">
-          <img src="images/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg">
+          <img src="images/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg" alt="">
           <span>Kitchen</span>
         </div>
         <div class="quad-item">
-          <img src="images/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg">
+          <img src="images/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg" alt="">
           <span>Laundry</span>
         </div>
         <div class="quad-item">
-          <img src="images/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg">
+          <img src="images/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg" alt="">
           <span>Decor</span>
         </div>
       </div>
       <a href="#">Explore more</a>
     </div>
   </div>
-
-  <div class="slider-container">
-    <h3>Best Sellers in Home & Kitchen</h3>
+  <br><br>
+  <div class="slider-container" style="margin-left: 28px; margin-right: 18px;">
+    <h3>Best Sellers in Home &amp; Kitchen</h3>
     <div class="slider-items">
-      <img src="images/51IKhgxg03L._AC_SY200_.jpg">
-      <img src="images/61CEwh+UVuL._AC_SY200_.jpg">
-      <img src="images/61Gvw0-b0eL._AC_SY200_.jpg">
-      <img src="images/61UEXxKIlrL._AC_SY200_.jpg">
-      <img src="images/61o6SkL3DOL._AC_SY200_.jpg">
-      <img src="images/61qm+2koyBL._AC_SY200_.jpg">
-      <img src="images/61s+DOVawZL._AC_SY200_.jpg">
-      <img src="images/7194yVwYXFL._AC_SY200_.jpg">
-      <img src="images/71Si2QlAb3L._AC_SY200_.jpg">
-      <img src="images/71kHwy9jklL._AC_SY200_.jpg">
-      <img src="images/71lylM-9P4L._AC_SY200_.jpg">
-      <img src="images/71oERUaDzWL._AC_SY200_.jpg">
-      <img src="images/81331aSHcAL._AC_SY200_.jpg">
+      <img src="images/51IKhgxg03L._AC_SY200_.jpg" alt="">
+      <img src="images/61CEwh+UVuL._AC_SY200_.jpg" alt="">
+      <img src="images/61Gvw0-b0eL._AC_SY200_.jpg" alt="">
+      <img src="images/61UEXxKIlrL._AC_SY200_.jpg" alt="">
+      <img src="images/61o6SkL3DOL._AC_SY200_.jpg" alt="">
+      <img src="images/61qm+2koyBL._AC_SY200_.jpg" alt="">
+      <img src="images/61s+DOVawZL._AC_SY200_.jpg" alt="">
+      <img src="images/7194yVwYXFL._AC_SY200_.jpg" alt="">
+      <img src="images/71Si2QlAb3L._AC_SY200_.jpg" alt="">
+      <img src="images/71kHwy9jklL._AC_SY200_.jpg" alt="">
+      <img src="images/71lylM-9P4L._AC_SY200_.jpg" alt="">
+      <img src="images/71oERUaDzWL._AC_SY200_.jpg" alt="">
+      <img src="images/81331aSHcAL._AC_SY200_.jpg" alt="">
     </div>
   </div>
-
-  <div class="product-grid" style="margin-top: 20px;">
+  <br>
+  <div class="product-grid" style="margin-left: 42px; margin-right: 8px; gap: 14px; margin-top: 18px;">
     <div class="card">
    <h3>Shop Father's Day deals</h3>
     <div class="quad-grid">
       <div class="quad-item">
-        <img src="images/AIS_FDay_2026_02_Fday_01_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692195_.jpg">
+        <img src="images/AIS_FDay_2026_02_Fday_01_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692195_.jpg" alt="">
         <span>Gifts</span>
       </div>
       <div class="quad-item">
-        <img src="images/AIS_FDay_2026_02_Fday_03_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692223_.jpg">
+        <img src="images/AIS_FDay_2026_02_Fday_03_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692223_.jpg" alt="">
         <span>Gadgets</span>
       </div>
       <div class="quad-item">
-        <img src="images/AIS_FDay_2026_02_Fday_05_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692213_.jpg">
+        <img src="images/AIS_FDay_2026_02_Fday_05_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692213_.jpg" alt="">
         <span>Apparel</span>
       </div>
       <div class="quad-item">
-        <img src="images/AIS_FDay_2026_02_Fday_07_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692172_.jpg">
+        <img src="images/AIS_FDay_2026_02_Fday_07_Muse_Prod_melody_homepage_372x232_1X._SY116_CB780692172_.jpg" alt="">
         <span>Tools</span>
       </div>
     </div>
@@ -191,19 +192,19 @@
   <h3>Spring essentials</h3>
     <div class="quad-grid">
       <div class="quad-item">
-        <img src="images/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg">
+        <img src="images/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg" alt="">
         <span>Clothing</span>
       </div>
       <div class="quad-item">
-        <img src="images/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg">
+        <img src="images/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg" alt="">
         <span>Shoes</span>
       </div>
       <div class="quad-item">
-        <img src="images/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg">
+        <img src="images/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg" alt="">
         <span>Bags</span>
       </div>
       <div class="quad-item">
-        <img src="images/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg">
+        <img src="images/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg" alt="">
         <span>Accessories</span>
       </div>
     </div>
@@ -212,53 +213,155 @@
    <div class="card">
      <h3>Deals on Electronics</h3>
      <div class="card-img-container">
-       <img src="images/product_headset.jpg">
+       <img src="images/product_headset.jpg" alt="headphones">
      </div>
      <a href="#">Shop deals</a>
    </div>
     <div class="card">
       <h3>Footwear styles</h3>
       <div class="card-img-container">
-        <img src="images/product_shoes.jpg">
+        <img src="images/product_shoes.jpg" alt="shoes">
       </div>
       <a href="#">Explore more</a>
     </div>
   </div>
-
-  <div class="slider-container">
+  <br><br>
+  <div class="slider-container" style="margin-left: 22px; margin-right: 25px; padding-left: 18px;">
     <h3>Inspired by your browsing history</h3>
     <div class="slider-items">
-      <img src="images/61CEwh+UVuL._AC_SY200_.jpg">
-      <img src="images/61Gvw0-b0eL._AC_SY200_.jpg">
-      <img src="images/61UEXxKIlrL._AC_SY200_.jpg">
-      <img src="images/61o6SkL3DOL._AC_SY200_.jpg">
-      <img src="images/61qm+2koyBL._AC_SY200_.jpg">
-      <img src="images/61s+DOVawZL._AC_SY200_.jpg">
-      <img src="images/7194yVwYXFL._AC_SY200_.jpg">
-      <img src="images/71Si2QlAb3L._AC_SY200_.jpg">
-      <img src="images/71kHwy9jklL._AC_SY200_.jpg">
-      <img src="images/71lylM-9P4L._AC_SY200_.jpg">
-      <img src="images/71oERUaDzWL._AC_SY200_.jpg">
-      <img src="images/81331aSHcAL._AC_SY200_.jpg">
-      <img src="images/51IKhgxg03L._AC_SY200_.jpg">
+      <img src="images/61CEwh+UVuL._AC_SY200_.jpg" alt="">
+      <img src="images/61Gvw0-b0eL._AC_SY200_.jpg" alt="">
+      <img src="images/61UEXxKIlrL._AC_SY200_.jpg" alt="">
+      <img src="images/61o6SkL3DOL._AC_SY200_.jpg" alt="">
+      <img src="images/61qm+2koyBL._AC_SY200_.jpg" alt="">
+      <img src="images/61s+DOVawZL._AC_SY200_.jpg" alt="">
+      <img src="images/7194yVwYXFL._AC_SY200_.jpg" alt="">
+      <img src="images/71Si2QlAb3L._AC_SY200_.jpg" alt="">
+      <img src="images/71kHwy9jklL._AC_SY200_.jpg" alt="">
+      <img src="images/71lylM-9P4L._AC_SY200_.jpg" alt="">
+      <img src="images/71oERUaDzWL._AC_SY200_.jpg" alt="">
+      <img src="images/81331aSHcAL._AC_SY200_.jpg" alt="">
+      <img src="images/51IKhgxg03L._AC_SY200_.jpg" alt="">
     </div>
   </div>
+  <br>
   </main>
-
-<script>
-var cur=0
- function changeSlide(n){
-   var slides = document.getElementsByClassName("slide")
+  <footer>
+    <a href="#" class="back-to-top">Back to top</a>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Amazon</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Amazon Devices</a></li>
+          <li><a href="#">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Make Money with Us</h4>
+        <ul>
+          <li><a href="#">Sell products on Amazon</a></li>
+          <li><a href="#">Sell on Amazon Business</a></li>
+          <li><a href="#">Sell apps on Amazon</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Advertise Your Products</a></li>
+          <li><a href="#">Self-Publish with Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="margin-left: 15px;">
+        <h4>Amazon Payment Products</h4>
+        <ul>
+          <li><a href="#">Amazon Business Card</a></li>
+          <li><a href="#">Shop with Points</a></li>
+          <li><a href="#">Reload Your Balance</a></li>
+          <li><a href="#">Amazon Currency Converter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Let Us Help You</h4>
+        <ul>
+          <li><a href="#">Amazon and COVID-19</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Your Orders</a></li>
+          <li><a href="#">Shipping Rates &amp; Policies</a></li>
+          <li><a href="#">Returns &amp; Replacements</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-selects">
+      <center>
+        <img src="amazon_logo.svg" class="footer-logo" alt="amazon">
+      </center>
+      <div class="select-btn">
+        <span>English</span>
+      </div>
+      <div class="select-btn">
+        <span>$ USD - U.S. Dollar</span>
+      </div>
+      <div class="select-btn">
+        <img src="icons/flag_in.svg" style="width: 18px; margin-right: 5px;" alt="india">
+        <span>India</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="services-grid">
+        <div class="service-item">
+          <h5>Amazon Music</h5>
+          <span>Stream millions of songs</span>
+        </div>
+        <div class="service-item">
+          <h5>Amazon Ads</h5>
+          <span>Reach customers</span>
+        </div>
+        <div class="service-item">
+          <h5>6pm</h5>
+          <span>Score deals on fashion</span>
+        </div>
+        <div class="service-item">
+          <h5>AbeBooks</h5>
+          <span>Books, art &amp; collectibles</span>
+        </div>
+        <div class="service-item" style="align-self: flex-end;">
+          <h5>ACX</h5>
+          <span>Audiobook Publishing Made Easy</span>
+        </div>
+        <div class="service-item">
+          <h5>Sell on Amazon</h5>
+          <span>Start a Selling Account</span>
+        </div>
+        <div class="service-item">
+          <h5>Veeqo</h5>
+          <span>Shipping Software Inventory</span>
+        </div>
+      </div>
+      <div class="legal-links">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Your Ads Privacy Choices</a>
+      </div>
+      <div class="copyright">
+        &copy; 1996-2026, Amazon.com, Inc. or its affiliates
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript">
+var cur = 0
+function changeSlide(n) {
+  var slides = document.getElementsByClassName("slide")
   slides[cur].style.display = "none"
-   cur=cur+n
-  if(cur>=slides.length){
-    cur=0
+  cur = cur + n
+  if (cur >= slides.length) {
+    cur = 0
   }
-   if(cur<0){
-     cur=slides.length-1
-   }
-   slides[cur].style.display = "block"
- }
+  if (cur < 0) {
+    cur = slides.length - 1
+  }
+  slides[cur].style.display = "block"
+}
 </script>
 </body>
 </html>

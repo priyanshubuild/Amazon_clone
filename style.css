@@ -567,6 +567,15 @@ footer {
   font-family: Arial, sans-serif;
   display: block;
 }
+.made-by {
+  font-size: 11px;
+  color: #777;
+  margin-top: 10px;
+  padding-bottom: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: block;
+}
 
 .page-main {
   background-color: #dde3e8;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fashion - Amazon</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar-top">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo">
+      </a>
+    </div>
+    <div class="search-container">
+      <select class="search-select"><option>All</option><option>Fashion</option></select>
+      <input type="text" id="search-input" class="search-input" placeholder="Search Amazon">
+      <button class="search-button" onclick="doSearch()">
+        <img class="icon-search" src="icons/search.svg" alt="search">
+      </button>
+    </div>
+    <a href="cart.html" style="text-decoration:none;">
+    <div class="cart-container" style="margin-left:20px;">
+      <img class="icon-cart" src="icons/cart.svg" alt="cart">
+      <span class="cart-count">0</span>
+      <span style="color: white; font-size: 13px; font-weight: bold;">Cart</span>
+    </div>
+    </a>
+  </div>
+  <div class="navbar-sub">
+    <a href="index.html" class="sub-link">Home</a>
+    <a href="deals.html" class="sub-link">Deals</a>
+    <a href="fashion.html" class="sub-link">Fashion</a>
+    <a href="electronics.html" class="sub-link">Electronics</a>
+  </div>
+</header>
+
+<br>
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &gt; Fashion
+</div>
+
+<main class="page-main">
+  <div class="page-box" style="margin-left:35px;">
+    <h2>Shop Fashion for less</h2>
+    <p style="font-size:13px; color:#777; margin-bottom:12px;">Tops, dresses, shoes and more at low prices.</p>
+    <div id="category-products" class="product-list-grid">
+      <p>Loading fashion items...</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="#" class="back-to-top">Back to top</a>
+  <div class="footer-bottom">
+    <div class="copyright">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</div>
+  </div>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

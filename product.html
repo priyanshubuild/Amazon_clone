@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product - Amazon</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar-top">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo" style="margin-top:2px;">
+      </a>
+    </div>
+    <div class="location-container">
+      <img class="icon-location" src="icons/location.svg" alt="" style="margin-top:8px;">
+      <div class="location-text">
+        <div class="label-top">Deliver to</div>
+        <div class="label-bottom" style="font-size:12px;">India</div>
+      </div>
+    </div>
+    <div class="search-container" style="margin-left:9px; height:33px;">
+      <select class="search-select">
+        <option>All</option>
+        <option>Books</option>
+        <option>Electronics</option>
+      </select>
+      <input type="text" id="search-input" class="search-input" placeholder="Search Amazon">
+      <button class="search-button" onclick="doSearch()">
+        <img class="icon-search" src="icons/search.svg" alt="search" style="top:2px; position:relative;">
+      </button>
+    </div>
+    <div class="language-container" style="margin-top:8px; margin-left:13px;">
+      <img class="icon-flag" src="icons/flag_in.svg" alt="india flag" style="width:22px;">
+      <span style="color: white; font-size: 11px;">IN</span>
+    </div>
+    <a href="signin.html" style="text-decoration:none;">
+    <div class="account-container" style="color: white; margin-top:7px;">
+      <div>Hello, sign in</div>
+      <div style="font-weight: bold; font-size: 12px;">Account &amp; Lists</div>
+    </div>
+    </a>
+    <a href="orders.html" style="text-decoration:none;">
+    <div class="orders-container" style="color: white; margin-left:4px;">
+      <div>Returns</div>
+      <div style="font-weight: bold; font-size:11px;">&amp; Orders</div>
+    </div>
+    </a>
+    <a href="cart.html" style="text-decoration:none;">
+    <div class="cart-container" style="margin-left:16px;">
+      <img class="icon-cart" src="icons/cart.svg" alt="cart">
+      <span class="cart-count">0</span>
+      <span style="color: white; font-size: 12px; font-weight: bold; margin-left:2px; top:1px; position:relative;">Cart</span>
+    </div>
+    </a>
+  </div>
+  <div class="navbar-sub" style="padding-left:10px; gap:18px;">
+    <span class="sub-menu">&#9776; All</span>
+    <a href="deals.html" class="sub-link">Today's Deals</a>
+    <a href="help.html" class="sub-link">Customer Service</a>
+    <a href="fashion.html" class="sub-link">Registry</a>
+    <a href="electronics.html" class="sub-link">Gift Cards</a>
+    <a href="gaming.html" class="sub-link">Sell</a>
+  </div>
+</header>
+
+<br>
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &gt; <a href="deals.html">Products</a> &gt; Product Details
+</div>
+
+<main class="page-main">
+  <div id="product-detail" class="product-detail-wrap">
+    <p>Loading product...</p>
+  </div>
+
+  <div class="related-section">
+    <h3>Products related to this item</h3>
+    <div id="related-products" class="product-list-grid">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="#" class="back-to-top">Back to top</a>
+  <div class="footer-links">
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="help.html">Careers</a></li>
+        <li><a href="help.html">About Amazon</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Let Us Help You</h4>
+      <ul>
+        <li><a href="signin.html">Your Account</a></li>
+        <li><a href="orders.html">Your Orders</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="copyright">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</div>
+  </div>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

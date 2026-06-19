@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign In - Amazon</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar-top" style="height:55px;">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="signin-box">
+    <h2>Sign in</h2>
+    <form onsubmit="return validateSignIn()">
+      <label for="email-input">Email or mobile phone number</label>
+      <input type="text" id="email-input" name="email">
+
+      <label for="password-input">Password</label>
+      <input type="password" id="password-input" name="password">
+
+      <button type="submit" class="signin-btn">Sign in</button>
+    </form>
+    <br>
+    <p style="font-size:12px; color:#555;">
+      By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
+    </p>
+    <br>
+    <a href="index.html" style="font-size:13px; color:#1a6e4f;">Back to home page</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom" style="margin-top:40px;">
+    <div class="copyright">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</div>
+  </div>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

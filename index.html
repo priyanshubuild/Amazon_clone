@@ -9,53 +9,59 @@
  <header>
    <div class="navbar-top">
      <div class="logo-container">
-   <a href="#">
-      <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo">
+   <a href="index.html">
+      <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo" style="margin-top:1px;">
     </a>
        </div>
     <div class="location-container">
-       <img class="icon-location" src="icons/location.svg" alt="">
+       <img class="icon-location" src="icons/location.svg" alt="" style="margin-top:7px;">
      <div class="location-text">
        <div class="label-top">Deliver to</div>
-      <div class="label-bottom">India</div>
+      <div class="label-bottom" style="margin-top:1px;">India</div>
      </div>
     </div>
-    <div class="search-container">
+    <div class="search-container" style="height:34px; margin-left:10px;">
       <select class="search-select">
         <option>All</option>
          <option>Books</option>
          <option>Electronics</option>
        </select>
-       <input type="text" class="search-input" placeholder="Search Amazon">
-       <button class="search-button">
-         <img class="icon-search" src="icons/search.svg" alt="search">
+       <input type="text" id="search-input" class="search-input" placeholder="Search Amazon">
+       <button class="search-button" onclick="doSearch()">
+         <img class="icon-search" src="icons/search.svg" alt="search" style="position:relative; top:1px;">
        </button>
      </div>
-      <div class="language-container">
-        <img class="icon-flag" src="icons/flag_in.svg" alt="india flag">
-       <span style="color: white; font-size: 12px;">IN</span>
+      <div class="language-container" style="margin-left:14px; margin-top:9px;">
+        <img class="icon-flag" src="icons/flag_in.svg" alt="india flag" style="width:21px;">
+       <span style="color: white; font-size: 11px; margin-left:2px; position:relative; top:1px;">IN</span>
      </div>
-     <div class="account-container" style="color: white;">
+     <a href="signin.html" style="text-decoration:none;">
+     <div class="account-container" style="color: white; margin-left:21px; margin-top:6px;">
        <div>Hello, sign in</div>
-       <div style="font-weight: bold; font-size: 13px;">Account &amp; Lists</div>
+       <div style="font-weight: bold; font-size: 12px; margin-top:2px;">Account &amp; Lists</div>
      </div>
-      <div class="orders-container" style="color: white;">
+     </a>
+      <a href="orders.html" style="text-decoration:none;">
+      <div class="orders-container" style="color: white; margin-left:5px;">
        <div>Returns</div>
-       <div style="font-weight: bold;">&amp; Orders</div>
+       <div style="font-weight: bold; font-size:12px;">&amp; Orders</div>
      </div>
-     <div class="cart-container">
-       <img class="icon-cart" src="icons/cart.svg" alt="cart">
-       <span class="cart-count" style="font-size:14px; top:-3px;">0</span>
-        <span style="color: white; font-size: 13px; font-weight: bold;">Cart</span>
+     </a>
+     <a href="cart.html" style="text-decoration:none;">
+     <div class="cart-container" style="margin-left:15px;">
+       <img class="icon-cart" src="icons/cart.svg" alt="cart" style="margin-top:3px;">
+       <span class="cart-count">0</span>
+        <span style="color: white; font-size: 12px; font-weight: bold; margin-left:3px; position:relative; top:2px;">Cart</span>
      </div>
+     </a>
    </div>
-   <div class="navbar-sub">
-     <span class="sub-menu">&#9776; All</span>
-     <a href="#" class="sub-link">Today's Deals</a>
-     <a href="#" class="sub-link">Customer Service</a>
-     <a href="#" class="sub-link">Registry</a>
-      <a href="#" class="sub-link">Gift Cards</a>
-     <a href="#" class="sub-link">Sell</a>
+   <div class="navbar-sub" style="gap:17px; padding-left:9px;">
+     <span class="sub-menu" style="margin-right:3px;">&#9776; All</span>
+     <a href="deals.html" class="sub-link">Today's Deals</a>
+     <a href="help.html" class="sub-link" style="margin-left:2px;">Customer Service</a>
+     <a href="fashion.html" class="sub-link">Registry</a>
+      <a href="electronics.html" class="sub-link" style="margin-left:-1px;">Gift Cards</a>
+     <a href="gaming.html" class="sub-link" style="margin-left:4px;">Sell</a>
    </div>
  </header>
  <br>
@@ -71,14 +77,14 @@
   <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
     </div>
   <div class="product-grid">
-    <div class="card" style="min-height: 420px;">
+    <div class="card clickable-card" style="min-height: 420px;" onclick="window.location.href='gaming.html'">
    <h3 style="font-size:16px;">Get your game on</h3>
    <div class="card-img-container">
      <img src="images/Fuji_Gaming_SingleImageCard_C-1._SY304_CB762596570_.jpg" alt="gaming">
    </div>
-    <a href="#">Shop gaming</a>
+    <a href="product.html?id=1" class="card-link" onclick="event.stopPropagation()">Shop gaming</a>
      </div>
-    <div class="card">
+    <div class="card clickable-card" onclick="window.location.href='fashion.html'">
   <h3>Shop Fashion for less</h3>
     <div class="quad-grid">
       <div class="quad-item">
@@ -98,9 +104,9 @@
         <span>Shoes</span>
       </div>
     </div>
-   <a href="#">See all deals</a>
+   <a href="fashion.html" class="card-link" onclick="event.stopPropagation()">See all deals</a>
      </div>
-   <div class="card">
+   <div class="card clickable-card" onclick="window.location.href='product.html?id=11'">
      <h3>New home arrivals</h3>
      <div class="quad-grid">
        <div class="quad-item">
@@ -120,9 +126,9 @@
          <span>Bedding</span>
        </div>
      </div>
-     <a href="#">Shop now</a>
+     <a href="product.html?id=7" class="card-link" onclick="event.stopPropagation()">Shop now</a>
    </div>
-    <div class="card">
+    <div class="card clickable-card" onclick="window.location.href='deals.html'">
       <h3>Refresh your space</h3>
       <div class="quad-grid">
         <div class="quad-item">
@@ -142,7 +148,7 @@
           <span>Decor</span>
         </div>
       </div>
-      <a href="#">Explore more</a>
+      <a href="deals.html" class="card-link" onclick="event.stopPropagation()">Explore more</a>
     </div>
   </div>
   <br><br>
@@ -166,7 +172,7 @@
   </div>
   <br>
   <div class="product-grid" style="margin-left: 42px; margin-right: 8px; gap: 14px; margin-top: 18px;">
-    <div class="card">
+    <div class="card clickable-card" onclick="window.location.href='deals.html'">
    <h3>Shop Father's Day deals</h3>
     <div class="quad-grid">
       <div class="quad-item">
@@ -186,9 +192,9 @@
         <span>Tools</span>
       </div>
     </div>
-   <a href="#">Explore all gifts</a>
+   <a href="product.html?id=12" class="card-link" onclick="event.stopPropagation()">Explore all gifts</a>
      </div>
-    <div class="card">
+    <div class="card clickable-card" onclick="window.location.href='fashion.html'">
   <h3>Spring essentials</h3>
     <div class="quad-grid">
       <div class="quad-item">
@@ -208,21 +214,21 @@
         <span>Accessories</span>
       </div>
     </div>
-   <a href="#">Shop the sale</a>
+   <a href="fashion.html" class="card-link" onclick="event.stopPropagation()">Shop the sale</a>
      </div>
-   <div class="card">
+   <div class="card clickable-card" onclick="window.location.href='product.html?id=2'">
      <h3>Deals on Electronics</h3>
      <div class="card-img-container">
        <img src="images/product_headset.jpg" alt="headphones">
      </div>
-     <a href="#">Shop deals</a>
+     <a href="product.html?id=2" class="card-link" onclick="event.stopPropagation()">Shop deals</a>
    </div>
-    <div class="card">
+    <div class="card clickable-card" onclick="window.location.href='product.html?id=3'">
       <h3>Footwear styles</h3>
       <div class="card-img-container">
         <img src="images/product_shoes.jpg" alt="shoes">
       </div>
-      <a href="#">Explore more</a>
+      <a href="product.html?id=3" class="card-link" onclick="event.stopPropagation()">Explore more</a>
     </div>
   </div>
   <br><br>
@@ -252,43 +258,43 @@
       <div class="footer-col">
         <h4>Get to Know Us</h4>
         <ul>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Amazon</a></li>
-          <li><a href="#">Investor Relations</a></li>
-          <li><a href="#">Amazon Devices</a></li>
-          <li><a href="#">Amazon Science</a></li>
+          <li><a href="help.html">Careers</a></li>
+          <li><a href="help.html">Blog</a></li>
+          <li><a href="help.html">About Amazon</a></li>
+          <li><a href="help.html">Investor Relations</a></li>
+          <li><a href="help.html">Amazon Devices</a></li>
+          <li><a href="help.html">Amazon Science</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Make Money with Us</h4>
         <ul>
-          <li><a href="#">Sell products on Amazon</a></li>
-          <li><a href="#">Sell on Amazon Business</a></li>
-          <li><a href="#">Sell apps on Amazon</a></li>
-          <li><a href="#">Become an Affiliate</a></li>
-          <li><a href="#">Advertise Your Products</a></li>
-          <li><a href="#">Self-Publish with Us</a></li>
+          <li><a href="gaming.html">Sell products on Amazon</a></li>
+          <li><a href="gaming.html">Sell on Amazon Business</a></li>
+          <li><a href="gaming.html">Sell apps on Amazon</a></li>
+          <li><a href="deals.html">Become an Affiliate</a></li>
+          <li><a href="deals.html">Advertise Your Products</a></li>
+          <li><a href="deals.html">Self-Publish with Us</a></li>
         </ul>
       </div>
       <div class="footer-col" style="margin-left: 15px;">
         <h4>Amazon Payment Products</h4>
         <ul>
-          <li><a href="#">Amazon Business Card</a></li>
-          <li><a href="#">Shop with Points</a></li>
-          <li><a href="#">Reload Your Balance</a></li>
-          <li><a href="#">Amazon Currency Converter</a></li>
+          <li><a href="help.html">Amazon Business Card</a></li>
+          <li><a href="help.html">Shop with Points</a></li>
+          <li><a href="help.html">Reload Your Balance</a></li>
+          <li><a href="help.html">Amazon Currency Converter</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Let Us Help You</h4>
         <ul>
-          <li><a href="#">Amazon and COVID-19</a></li>
-          <li><a href="#">Your Account</a></li>
-          <li><a href="#">Your Orders</a></li>
-          <li><a href="#">Shipping Rates &amp; Policies</a></li>
-          <li><a href="#">Returns &amp; Replacements</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="help.html">Amazon and COVID-19</a></li>
+          <li><a href="signin.html">Your Account</a></li>
+          <li><a href="orders.html">Your Orders</a></li>
+          <li><a href="help.html">Shipping Rates &amp; Policies</a></li>
+          <li><a href="help.html">Returns &amp; Replacements</a></li>
+          <li><a href="help.html">Help</a></li>
         </ul>
       </div>
     </div>
@@ -339,29 +345,15 @@
         </div>
       </div>
       <div class="legal-links">
-        <a href="#">Conditions of Use</a>
-        <a href="#">Privacy Notice</a>
-        <a href="#">Your Ads Privacy Choices</a>
+        <a href="help.html">Conditions of Use</a>
+        <a href="help.html">Privacy Notice</a>
+        <a href="help.html">Your Ads Privacy Choices</a>
       </div>
       <div class="copyright">
         &copy; 1996-2026, Amazon.com, Inc. or its affiliates
       </div>
     </div>
   </footer>
-<script type="text/javascript">
-var cur = 0
-function changeSlide(n) {
-  var slides = document.getElementsByClassName("slide")
-  slides[cur].style.display = "none"
-  cur = cur + n
-  if (cur >= slides.length) {
-    cur = 0
-  }
-  if (cur < 0) {
-    cur = slides.length - 1
-  }
-  slides[cur].style.display = "block"
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shopping Cart - Amazon</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <div class="navbar-top">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="amazon-logo" src="amazon_logo.svg" alt="amazon logo">
+      </a>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Search Amazon">
+      <button class="search-button" onclick="doSearch()">
+        <img class="icon-search" src="icons/search.svg" alt="search">
+      </button>
+    </div>
+    <a href="signin.html" style="text-decoration:none;">
+    <div class="account-container" style="color:white; margin-left:20px;">
+      <div>Hello, sign in</div>
+    </div>
+    </a>
+    <div class="cart-container" style="margin-left:15px;">
+      <img class="icon-cart" src="icons/cart.svg" alt="cart">
+      <span class="cart-count">0</span>
+      <span style="color: white; font-size: 13px; font-weight: bold;">Cart</span>
+    </div>
+  </div>
+</header>
+
+<br>
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &gt; Shopping Cart
+</div>
+
+<main class="page-main">
+  <div class="cart-page-box">
+    <h2 style="font-size:24px; margin-bottom:15px;">Shopping Cart</h2>
+    <div id="cart-items-list">
+      <p>Loading cart...</p>
+    </div>
+    <div class="cart-total-box">
+      <h3>Subtotal: <span id="cart-total">₹0</span></h3>
+      <br>
+      <button class="btn-buy-now" onclick="alert('Order placed! (demo only)'); localStorage.removeItem('amazonCart'); window.location.href='orders.html';">Proceed to Buy</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="#" class="back-to-top">Back to top</a>
+  <div class="footer-bottom">
+    <div class="copyright">&copy; 1996-2026, Amazon.com, Inc. or its affiliates</div>
+  </div>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
